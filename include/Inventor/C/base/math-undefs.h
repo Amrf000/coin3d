@@ -56,24 +56,26 @@
 
 #if !defined(__clang__) && (defined(_MSC_VER) && _MSC_VER < 1900)
 
-#undef cosf
-#define cosf(x) NO_SINGLEPREC /* whatever that'll give us a compile error... */
-#undef sinf
-#define sinf(x) NO_SINGLEPREC
-#undef tanf
-#define tanf(x) NO_SINGLEPREC
-#undef powf
-#define powf(x) NO_SINGLEPREC
-#undef sqrtf
-#define sqrtf(x) NO_SINGLEPREC
-#undef acosf
-#define acosf(x) NO_SINGLEPREC
-#undef asinf
-#define asinf(x) NO_SINGLEPREC
-#undef atanf
-#define atanf(x) NO_SINGLEPREC
-#undef atan2f
-#define atan2f(x) NO_SINGLEPREC
+# if 0
+    #undef cosf
+    #define cosf(x) NO_SINGLEPREC /* whatever that'll give us a compile error... */
+    #undef sinf
+    #define sinf(x) NO_SINGLEPREC
+    #undef tanf
+    #define tanf(x) NO_SINGLEPREC
+    #undef powf
+    #define powf(x) NO_SINGLEPREC
+    #undef sqrtf
+    #define sqrtf(x) NO_SINGLEPREC
+    #undef acosf
+    #define acosf(x) NO_SINGLEPREC
+    #undef asinf
+    #define asinf(x) NO_SINGLEPREC
+    #undef atanf
+    #define atanf(x) NO_SINGLEPREC
+    #undef atan2f
+    #define atan2f(x) NO_SINGLEPREC
+#endif 
 
 #endif // !__clang__
 
